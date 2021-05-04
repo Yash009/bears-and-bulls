@@ -3,11 +3,9 @@ import React from 'react'
 const Suggestions = (props) => {
   //console.log(props.results[0]);
   const options = props.results.map(r => (
-    <li className='text-center'>
-        <ul>
-            <li>{r[Object.keys(r)[0]]}<span><strong></strong></span></li>
-        </ul>       
-    </li>
+      <ul className="searchResultListParent">
+          <li className="searchResultList">{r[Object.keys(r)[0]]}<span><strong></strong></span></li>
+      </ul>       
   ))
   return <ul>{options}</ul>
 }

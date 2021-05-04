@@ -32,7 +32,7 @@ class Search extends Component {
 // rendering the form and results
   render() {
     return (
-      <form className="text-center">
+      <form className="text-left">
         <input
           placeholder="Search for..."
           className="search-input"

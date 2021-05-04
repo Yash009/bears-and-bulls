@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -40,18 +40,25 @@
   text-align: left;
 }
 form.text-left {
-  width: 25%;
-  text-align: center;
+  width: 40%;
   padding: 0 20px;
+  float: left;
+  margin-top: 5%;
 }
-form ul {
+form ul.searchResultListParent {
   padding: 0;
+  background-color: #dedede;
 }
 form li {
   list-style: none;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  background-color: #dedede;
+  padding: 5px;
+}
+.form li:hover {
+  background-color: #fff;
 }
 li strong {
   padding-left: 5px;
@@ -62,13 +69,18 @@ input {
   background-color: aliceblue;
   border-radius: 15px;
 }
-.search-input {
-  width: 40%;
-}
 .App {
   text-align: center;
   height: 100vh;
   background-color: cornsilk;
+  padding: 20px;
+}
+.text-left.search-result {
+  width: 40%;
+  float: right;
+}
+.searchResultList:hover {
+  background-color: #fff;
 }
 @keyframes App-logo-spin {
   from {
